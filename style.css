@@ -2,10 +2,21 @@ html, body {
   width: 100%;
   margin:0 auto;
 }
-@media (max-width: 600px) {body {
-  width: 400px !important;
-  align-items: center;
-}}
+.all4 {max-width: 1600px;
+  margin: 0 auto;
+ padding: 0 15px;}
+@media (max-width: 1200px) {
+  .all4 {max-width: 1000px;}
+}
+@media (max-width: 992px) {
+  .all4 {max-width: 970px;}
+}
+@media (max-width: 992px) {
+  .all4 {max-width: 750px;}
+}
+@media (max-width: 767px) {
+  .all4 {max-width: none;}
+}
 /*--------------------Ф О Р М А-------------------------*/
 form{position:relative;
   width: 30%;
@@ -123,9 +134,6 @@ span.p2 {color:#ec7979}
 .pict img{width: 70%;
           padding: 0 50px;
           }
-@media (max-width: 600px) {
- .pict img {display: none;}
-}
 .contentb1 {padding: 0 50px;
            margin: -15px 0 0 0;
            display: flex;
@@ -169,12 +177,7 @@ hr {width:60px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;}
-@media screen and (max-width: 600px) {
-  .tabprice {display:flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    align-items: center;}
-}
+
 table {font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   border-collapse: separate;
